@@ -8,15 +8,17 @@ public class HashmapWordsCounter {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		HashMap<String, Integer> hmap = new HashMap<>();
+		HashMap<Character, Integer> hmap = new HashMap<>();
 		
 		System.out.println("Enter the String: ");
 		String str = scan.nextLine();
 		
-		//This is to check irrespective of case
+		char[] strArray = str.toCharArray();
+		
+		/*//This is to check irrespective of case
 		String finalStr = str.toLowerCase();
 		
-		String[] strArray = finalStr.split(" ");
+		String[] strArray = finalStr.split(" ");*/
 		
 		for(int i=0; i<strArray.length; i++) {
 			

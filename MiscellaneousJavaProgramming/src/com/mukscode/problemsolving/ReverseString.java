@@ -11,20 +11,18 @@ import java.util.*;
  */
 public class ReverseString {
 
-	public static void main(String[] args) {
-		
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("Enter the Value of String that needs to be revesed: ");
-		String userInput = scan.next();
-		
-		char[] userInputasChar = userInput.toCharArray();
-		
-		for(int i = (userInputasChar.length-1); i>=0; i--) {
-			
-			System.out.print(userInputasChar[i]);
+		public static void main(String[] args) {
+			reverseString("Star Trek");
 		}
-		scan.close();
+
+	private static void reverseString(String string) {
+			
+			char[] ch = string.toCharArray();
+		
+		for(int i = (ch.length-1); i>=0; i--) {
+			
+			System.out.print(ch[i]);
+		}
 
 	}
 

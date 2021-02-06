@@ -6,23 +6,18 @@ public class Swapping_v2 {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+		swapping(2, 3);
 		
-		System.out.println("Enter the numbers to be swapped");
-		
-		System.out.println("First Number: ");
-		int firstNumber = sc.nextInt();
-		
-		System.out.println("Second Number: ");
-		int secondNumber = sc.nextInt();
-		
+	}
+
+	private static void swapping(int firstNumber, int secondNumber) {
 		firstNumber  = firstNumber + secondNumber;
 		secondNumber = firstNumber - secondNumber;
 		firstNumber  = firstNumber - secondNumber;
-		System.out.println("After Swapping - First Number is: "+firstNumber+" Second Number is: "+secondNumber);
+		System.out.println(firstNumber+" "+ secondNumber);
 		
 		
-
+		
 	}
-
+	
 }
