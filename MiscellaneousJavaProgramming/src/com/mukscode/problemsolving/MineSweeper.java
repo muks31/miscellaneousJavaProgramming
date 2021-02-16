@@ -5,7 +5,9 @@ public class MineSweeper {
 	public static void main(String[] args) {
 		
 		int[][] bomb1 = {{0,2}, {2,0}};
-		FindmineSweeper(bomb1, 3, 3);
+		
+		int[][] bomb2 = {{1,2}, {2, 1}, {3,3}};
+		FindmineSweeper(bomb2, 3, 3);
 	}
 	public static int[][] FindmineSweeper(int[][] bombs, int numRows, int numCols){
 		int [][] field = new int[numRows][numCols];
