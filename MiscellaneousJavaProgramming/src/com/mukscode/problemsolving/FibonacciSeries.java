@@ -8,11 +8,15 @@ public class FibonacciSeries {
 
 	public static void main(String[] args) {
 		
-		System.out.println(Arrays.toString(fibonacciGenerator(15)));
+		//System.out.println(Arrays.toString(fibonacciGenerator(15)));
+		int num = 5;
+		fibonacci(num);
 
 	}
-
-	private static int[] fibonacciGenerator(int num) {
+	
+	//Approach - 1
+	/*private static int[] fibonacciGenerator(int num) {
+		
 		
 		int[] intArray = new int[num];
 		int counter = 0;
@@ -31,6 +35,18 @@ public class FibonacciSeries {
 		}
 		return intArray;
 		
-	}
+	}*/
 
+	//Approach - 2
+	private static void fibonacci(int num) {
+		
+		int a = 0, b = 0, c = 1;
+		
+		for(int i = 0; i<num; i++) {
+			a = b;
+			b = c;
+			c = a+b;
+			System.out.println(a + " ");
+		}
+	}
 }
